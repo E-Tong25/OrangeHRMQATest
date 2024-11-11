@@ -20,10 +20,18 @@ namespace QA_Test_OpenSource_Demo_Website
         [TestMethod]
         public void TestOpenNewTab()
         {
+            //Login Prerequisites with valid credentials
+
             _driver.Navigate().GoToUrl(_selectors.url);
-            _selectors.userNameTextBox.SendKeys("username");
-            _selectors.passwordTextBox.SendKeys("");
+            _selectors.userNameTextBox.SendKeys("Admin");
+            _selectors.passwordTextBox.SendKeys("admin123");
             _selectors.loginButton.Click();
+
+            //Click on help button '?' in top right corner
+            //Make sure that a new tab opens 
+            //Make sure the following links are present/enabled (Admin User Guide, Employee User Guide, Mobile App, AWS Guide, FAQs)
+            //Make sure the Search Bar is present
+            //Make sure the Sign in button is displayed
 
         }
 

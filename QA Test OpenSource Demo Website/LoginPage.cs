@@ -18,7 +18,7 @@ namespace QA_Test_OpenSource_Demo_Website
         }
         
         [TestMethod]
-        public void TestMethod1()
+        public void TestLogin()
         {
             _driver.Navigate().GoToUrl(_selectors.url);
             _selectors.userNameTextBox.SendKeys("Admin");
