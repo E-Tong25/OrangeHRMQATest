@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QA Test OpenSource Demo Website")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41a87cac818a8e2dd18c2eaf469653bf4672b692")]
 [assembly: System.Reflection.AssemblyProductAttribute("QA Test OpenSource Demo Website")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QA Test OpenSource Demo Website")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

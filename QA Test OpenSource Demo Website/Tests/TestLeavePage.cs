@@ -1,16 +1,34 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using QA_Test_OpenSource_Demo_Website;
 
-namespace QA_Test_OpenSource_Demo_Website
+namespace QA_Test_OpenSource_Demo_Website_Test
 {
-    public class LeavePage
+    [TestClass]
+    public class TestLeavePage
     {
         public required IWebDriver _driver;
         public required Selectors _selectors;
-        
-        public void ApplyForLeave()
+
+        [TestInitialize]
+        public void Setup()
         {
+            _driver = new ChromeDriver();
+            _selectors = new Selectors(_driver);
+        }
+        
+        [TestMethod]
+        public void TestApplyForLeave()
+        {
+            //Arrange
+
+
+            //Act
+
+
+            //Assert
+            
             //Navigate to Leave page
             //Click Apply
             //Select Leave Type
@@ -22,7 +40,13 @@ namespace QA_Test_OpenSource_Demo_Website
             //Cancel the leave you just requested
             //Make sure the leave is now marked as canceled on the 'My Leave' page
             //Navigate back to main leave page and make sure that leave is no longer in the results view
-            
+        }
+
+        [TestCleanup]
+        public void Cleanup()
+        {
+            _driver.Quit();
+            _driver.Dispose();
         }
     }
 }
